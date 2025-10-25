@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Gemini Audio Orb",
+  "description": "An ultra-modern, voice-interactive orb powered by the Gemini Live API. Speak to the orb and receive real-time audio responses in a seamless, conversational experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
