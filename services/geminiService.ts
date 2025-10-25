@@ -84,7 +84,7 @@ const sources = new Set<AudioBufferSourceNode>();
 export async function connectToGemini(callbacks: GeminiCallbacks): Promise<LiveSession> {
   const apiKey = (window as any).GEMINI_API_KEY;
   if (!apiKey || apiKey === '%%API_KEY%%') {
-    throw new Error("A chave de API do Gemini não está configurada. Por favor, defina a variável de ambiente API_KEY no Easypanel.");
+    throw new Error("A chave de API do Gemini não foi encontrada. Configure a variável de ambiente API_KEY no seu painel Easypanel.");
   }
   const ai = new GoogleGenAI({ apiKey });
   
